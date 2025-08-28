@@ -1,0 +1,33 @@
+.background{
+    position:relative;
+}
+
+body{
+    margin:0;
+}
+
+#leaves {
+
+    height: 100vh;
+
+}
+
+#odin{
+    --percent-size: 0.35;
+    width: calc(var(--percent-size)*380px);
+    height: calc(var(--percent-size)*500px);
+}
+
+.image-container{
+    position: absolute;
+    top:10%;
+    left:0;
+}
+
+.image-container::after {
+
+    content: "ODIN";
+    text-align: center;
+    color: white;
+    top: 0;
+}
