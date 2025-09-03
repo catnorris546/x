@@ -1,5 +1,7 @@
 .background{
     position:relative;
+    display: flex;
+
 }
 
 body{
@@ -16,18 +18,96 @@ body{
     --percent-size: 0.35;
     width: calc(var(--percent-size)*380px);
     height: calc(var(--percent-size)*500px);
+
 }
 
 .image-container{
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;
     position: absolute;
-    top:10%;
+    top:20%;
     left:0;
+    background-color:black;
+    width: 550px;
+    opacity: 0.5;
 }
 
 .image-container::after {
-
+    font-size: 60px;
     content: "ODIN";
-    text-align: center;
     color: white;
-    top: 0;
+}
+
+#right-side{
+    position: relative;
+    /*padding-left: 40px;*/
+}
+
+#text-container{
+    position: absolute;
+    top:15%;
+    /*width: 550px;*/
+    width: 1000px;
+
+}
+
+#first-statement, #second-statement, #third-statement, #fourth-statement {
+    font-size: 23px;
+    font-weight: bold;
+    width: 550px;
+}
+
+#first-statement{
+    margin-bottom: 0;
+}
+
+#second-statement {
+margin-top:0;
+
+}
+
+#third-statement {
+
+
+}
+
+#fourth-statement {
+
+
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 60px;
+
+}
+
+label {
+    display: block;
+}
+
+#Create_Account {
+    color: white;
+    background-color: green;
+    padding: 10px 50px 10px 50px;
+}
+
+button{
+    border-radius: 5px;
+}
+
+#form-container{
+    padding-bottom: 40px;
+    padding-right: 500px;
+    box-shadow: 10px 10px 8px 10px #888888;
+    padding-left: 40px;
+    margin-bottom: 40px;
+
+}
+
+input {
+    border-radius: 5px;
 }

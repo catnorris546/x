@@ -10,6 +10,57 @@
 <body>
 <div class="background">
     <img id="leaves" src="pictures/leaves.jpg" alt="leaves">
+  <div id="right-side">
+    <div id="text-container">
+      <p id="first-statement">
+        This is not a real online service! You know you need something like this
+        in your life to help you realize your deepest dreams.
+      </p>
+      <p id="second-statement">
+        Sign up now to get started.
+      </p>
+      <p id="third-statement">
+        You know you want to.
+      </p>
+      <div id="form-container">
+        <p id="fourth-statement">
+          Let's do this!
+        </p>
+        <form action="https://httpbin.org/post" method="post">
+          <div>
+            <label for="first_name">First name:</label>
+            <input type="text" name="first_name" id="first_name">
+          </div>
+
+          <div>
+            <label for="last_name">Last name:</label>
+            <input type="text" name="last_name" id="last_name">
+          </div>
+
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+          </div>
+          <div>
+            <label for="phone-number">Phone Number:</label>
+            <input type="number" name="phone-number" id="phone-number">
+          </div>
+          <div>
+            <label for="password">Password:</label>
+            <input type="text" name="password" id="password">
+          </div>
+          <div>
+            <label for="confirm-password">Confirm password:</label>
+            <input type="text" name="confirm-password" id="confirm-password">
+          </div>
+
+        </form>
+      </div>
+      <button id="Create_Account">Create Account</button>
+      <p id="last_statement">Already have an account? <span style="color:green">Log in</span></p>
+    </div>
+
+  </div>
     <div class="image-container">
         <img id="odin" src="pictures/odin-lined.png" alt="odin">
     </div>
