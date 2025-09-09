@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="main.js"async></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Title</title>
+</head>
+<body>
+<div id="pop_up_container">
+  <button id="pop_up_button">Add a Book</button>
+</div>
+<div id="test1">
+  <dialog id="modal">
+    <p>I'm a modal</p>
+    <!-- A button to be able to close the modal -->
+
+    <form id="testForm">
+      <label for="author">Author:</label>
+      <input type="text" name="author" id="author">
+      <label for="title">Title:</label>
+      <input type="text" name="title" id="title">
+      <label for="number_of_pages">Number of Pages:</label>
+      <input type="number" name="number_of_pages" id="number_of_pages">
+      <label for="read">Read?</label>
+      <input type="text" name="read" id="read">
+      <button type="submit" id="submit">Submit</button>
+    </form>
+
+    <button value="cancel" id="button1">Cancel</button>
+  </dialog>
+</div>
+<table>
+<thead>
+<tr>
+  <th scope="col">Author</th>
+  <th scope="col">Title</th>
+  <th scope="col">Number of Pages</th>
+  <th scope="col">Read</th>
+  <th scope="col">Id</th>
+</tr>
+</thead>
+  <tbody>
+
+  </tbody>
+</table>
+
+
+</body>
+</html>
