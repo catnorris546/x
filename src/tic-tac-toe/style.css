@@ -1,0 +1,27 @@
+#container{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows:repeat(3, 1fr);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+.space{
+    display: grid;
+    place-items: center;
+    background-color: lightblue;
+    font-size: 15rem;
+
+   /*// outline: solid 3px black;*/
+
+}
+
+#space0, #space1, #space2, #space3, #space4, #space5 {
+    border-bottom: 3px solid black;
+}
+
+#space0,#space1, #space3, #space4, #space6, #space7 {
+    border-right: 3px solid black;
+}
+

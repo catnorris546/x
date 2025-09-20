@@ -12,8 +12,14 @@ function emptyOrNot(row,column,symbol){
 
 function gameLogic(symbol, won){
   switch(symbol){
-    case gameboard[0][0] === symbol && gameboard[0][1] && gameboard[0][2]:
-    case gameboard[1][0] === symbol && gameboard[1][1] && gameboard[1][2]:
+    case gameboard[0][0] === symbol && gameboard[0][1] === symbol && gameboard[0][2] === symbol:
+    case gameboard[1][0] === symbol && gameboard[1][1] === symbol && gameboard[1][2] === symbol:
+    case gameboard[2][0] === symbol && gameboard[2][1] === symbol && gameboard[2][2] === symbol:
+    case gameboard[0][0] === symbol && gameboard[1][0] === symbol && gameboard[2][0] === symbol:
+    case gameboard[0][1] === symbol && gameboard[1][1] === symbol && gameboard[1][2] === symbol:
+    case gameboard[0][2] === symbol && gameboard[1][2] === symbol && gameboard[2][2] === symbol:
+    case gameboard[0][0] === symbol && gameboard[1][1] === symbol && gameboard[2][2] === symbol:
+    case gameboard[0][2] === symbol && gameboard[1][1] === symbol && gameboard[2][0] === symbol:
       won();
       break;
   }
